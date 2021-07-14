@@ -181,7 +181,6 @@ main {
 }
 
 .top-players-photo.left {
-    background-color: #621496;
     background-image: url("../images/players/player-3.png");
     background-repeat: no-repeat;
     background-size:cover;
@@ -197,33 +196,15 @@ main {
     background-size:cover;
 }
 
-.top-players-photo.left:hover{
-    /* transform: rotate(360deg); */
-    transform: scale(1.2);
-    transition: transform 1s ease-in-out;
-}
-
-.top-players-photo.left:hover .top-players-name{
-    display: block;
-}
-
-.top-players-photo.middle:hover{
-    /* transform: rotate(360deg); */
-    transform: scale(1.2);
-    transition: transform 1s ease-in-out;
-}
-
-.top-players-photo.middle:hover .top-players-name{
-    display: block;
-}
-
-
+.top-players-photo.left:hover,
+.top-players-photo.middle:hover,
 .top-players-photo.right:hover{
-    /* transform: rotate(360deg); */
     transform: scale(1.2);
     transition: transform 1s ease-in-out;
 }
 
+.top-players-photo.left:hover .top-players-name,
+.top-players-photo.middle:hover .top-players-name,
 .top-players-photo.right:hover .top-players-name{
     display: block;
 }
@@ -235,7 +216,7 @@ main {
 /* top goal section start  */
 
 .top-goals-container {
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 
 .top-goals {
@@ -246,10 +227,65 @@ main {
 
 .top-goals-clip {
     width: 30%;
-    height:350px;
+    height:300px;
     /* margin-right:20px; */
 }
 
-.top-goals-clip.left video {
-    width:100%;
+.top-goals-clip{
+    width:25%;
+    /* background-color:yellow; */
+    border:5px solid cornflowerblue;
 }
+
+/* top goal section end  */
+
+
+/* footer section start  */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section {
+    width:484px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.footer-section .logo img {
+    width: 100%;
+    height: 110px;
+    margin-bottom:20px;
+}
+
+.footer-section .icon {
+    /* background-color: cyan; */
+    width: 170px;
+    height: 32px;
+    display:flex;
+    justify-content:center;
+}
+
+.icon-section {
+    display: flex;
+    margin-bottom:20px;
+}
+.icon-section .icon {
+    width: 32px;
+    height: 32px;
+    margin-right:7px;
+}
+
+.footer-section .copyright {
+    width: 236px;
+    height: 31px;
+}
+
+.footer-section .copyright span {
+    justify-content: center;
+    font-weight:400px;
+    color:darkcyan;
+}
+
