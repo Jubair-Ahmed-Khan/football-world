@@ -69,7 +69,8 @@ body {
 }
 
 
-.banner img {
+.banner 
+img {
     width:556px;
     height:438px;
 }
@@ -95,7 +96,7 @@ main {
     grid-column-gap: 30px;
     /* background:violet; */
     margin-top: 70px;
-    margin-bottom: 165px;
+    margin-bottom: 100px;
     /* border:3px solid black; */
     
 }
@@ -111,30 +112,35 @@ main {
     
 }
 
-.player .player-image {
+.player 
+.player-image {
     width: 300px;
 }
 
-.player .player-image img {
+.player 
+.player-image img {
     width: 100%;
     height: 256px;
 }
 
-.player .player-info {
+.player 
+.player-info {
     padding-top:0;
     width:300px;
     height: 154px;
     /* background-color: teal; */
 }
 
-.player-info .player-name {
-    color: #18191F;
+.player-info 
+.player-name {
+    color:#8a2be2;
     font-size: 28px;
     font-weight: 700;
     
 }
 
-.player-info .player-details {
+.player-info 
+.player-details {
     color: #6C6C6C;
     font-weight: 400;
     font-size: 16px;
@@ -142,3 +148,108 @@ main {
 
 /* player info section ends  */
 
+
+
+/* top player section start  */
+
+.top-players-container {
+    margin-bottom: 100px;
+}
+
+.top-players {
+    display: flex;
+    justify-content: space-between;
+    width: 1102px;
+}
+
+.top-players-title , .top-goals-title{
+    color:blueviolet;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.top-players-photo {
+    width: 30%;
+    height:350px;
+    /* margin-right:20px; */
+}
+
+.top-players-name {
+    color: #ffffff;
+    margin-left: 10px;
+    display:none;
+}
+
+.top-players-photo.left {
+    background-color: #621496;
+    background-image: url("../images/players/player-3.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.top-players-photo.middle {
+    background-image: url("../images/players/player-2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.top-players-photo.right {
+    background-image: url("../images/players/player-1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.top-players-photo.left:hover{
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+.top-players-photo.left:hover .top-players-name{
+    display: block;
+}
+
+.top-players-photo.middle:hover{
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+.top-players-photo.middle:hover .top-players-name{
+    display: block;
+}
+
+
+.top-players-photo.right:hover{
+    /* transform: rotate(360deg); */
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+.top-players-photo.right:hover .top-players-name{
+    display: block;
+}
+
+/* top player section end  */
+
+
+
+/* top goal section start  */
+
+.top-goals-container {
+    margin-bottom: 100px;
+}
+
+.top-goals {
+    display: flex;
+    justify-content: space-between;
+    width: 1102px;
+}
+
+.top-goals-clip {
+    width: 30%;
+    height:350px;
+    /* margin-right:20px; */
+}
+
+.top-goals-clip.left video {
+    width:100%;
+}
